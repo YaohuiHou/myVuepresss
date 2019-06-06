@@ -1,6 +1,8 @@
 # git 常用命令
 
 [git - 简易指南](http://www.bootcss.com/p/git-guide/)
+[廖雪峰 git 教程](https://www.liaoxuefeng.com/wiki/896043488029600)
+[阮一峰常用 git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
 
 ### 添加文件：
 
