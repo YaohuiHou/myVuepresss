@@ -107,6 +107,7 @@ export default {
       reader.onload = () => {
         this.imageUrl = reader.result;
         this.imgInnputFile = file;
+        console.log(reader.result);
 
         // 宽高
         var image = new Image();
