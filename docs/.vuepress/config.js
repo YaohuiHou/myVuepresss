@@ -91,6 +91,7 @@ module.exports = {
       ],
       '/Html+CSS/': [
         'CSS',
+        'canvas',
       ],
       '/Python/': [
         '基础语法',

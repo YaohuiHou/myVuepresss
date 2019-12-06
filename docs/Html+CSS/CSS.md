@@ -306,3 +306,11 @@ div {
   background-image: radial-gradient(circle, red, yellow, green);
 }
 ```
+
+### 重复性渐变
+
+```css
+div {
+  background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}
+```
