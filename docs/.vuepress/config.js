@@ -87,7 +87,8 @@ module.exports = {
         'string',
         'array',
         'object',
-        '遍历'
+        '遍历',
+        'regex'
       ],
       '/Html+CSS/': [
         'CSS',
