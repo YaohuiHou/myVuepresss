@@ -513,3 +513,131 @@ resetTransform()
 ```js
 setTransform(m11, m12, m21, m22, dx, dy)
 ```
+
+## 合成与裁剪
+
+### globalCompositeOperation
+
+覆盖指定区域，清除画布中的某些部分及其他操作。[Compositing 详细文档](https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Compositing)
+
+```js
+// type值
+ctx.globalCompositeOperation = type
+```
+
+- source-over 这是默认设置，并在现有画布上下文之上绘制新图形。
+- source-in 新图形只在新图形和目标画布重叠的地方绘制。其他的都是透明的。
+- source-out 在不与现有画布内容重叠的地方绘制新图形。
+- source-atop 新图形只在与现有画布内容重叠的地方绘制。
+- destination-over 在现有的画布内容后面绘制新的图形。
+- destination-in 现有的画布内容保持在新图形和现有画布内容重叠的位置。其他的都是透明的。
+- destination-atop 现有的画布只保留与新图形重叠的部分，新的图形是在画布内容后面绘制的。
+- lighter 两个重叠图形的颜色是通过颜色值相加来确定的。
+- copy 只显示新图形。
+- xor 图像中，那些重叠和正常绘制之外的其他地方是透明的。
+- multiply 将顶层像素与底层相应像素相乘，结果是一幅更黑暗的图片。
+- screen 像素被倒转，相乘，再倒转，结果是一幅更明亮的图片。
+- overlay multiply 和 screen 的结合，原本暗的地方更暗，原本亮的地方更亮。
+- darken 保留两个图层中最暗的像素。
+- lighten 保留两个图层中最亮的像素。
+- color-dodge 将底层除以顶层的反置。
+- color-burn 将反置的底层除以顶层，然后将结果反过来。
+- hard-light 屏幕相乘（A combination of multiply and screen）类似于叠加，但上下图层互换了。
+- soft-light 用顶层减去底层或者相反来得到一个正值。
+- difference 一个柔和版本的强光（hard-light）。纯黑或纯白不会导致纯黑或纯白。
+- exclusion 和 difference 相似，但对比度较低。
+- hue 保留了底层的亮度（luma）和色度（chroma），同时采用了顶层的色调（hue）。
+- saturation 保留底层的亮度（luma）和色调（hue），同时采用顶层的色度（chroma）。
+- color 保留了底层的亮度（luma），同时采用了顶层的色调(hue)和色度(chroma)。
+- luminosity 保持底层的色调（hue）和色度（chroma），同时采用顶层的亮度（luma）。
+
+### 裁剪 clip
+
+将当前正在构建的路径转换为当前的裁剪路径。
+
+```js
+// 裁切一个圆形
+ctx.beginPath()
+ctx.arc(0, 0, 60, 0, Math.PI * 2, true)
+ctx.clip()
+```
+
+## 基本动画
+
+可能最大的限制就是图像一旦绘制出来，它就是一直保持那样了。如果需要移动它，我们不得不对所有东西（包括之前的）进行重绘。重绘是相当费时的，而且性能很依赖于电脑的速度。
+
+动画基本步骤：
+
+1. **清空 canvas** <br>
+   除非接下来要画的内容会完全充满 canvas （例如背景图），否则你需要清空所有。最简单的做法就是用 clearRect 方法。
+2. **保存 canvas 状态** <br>
+   如果你要改变一些会改变 canvas 状态的设置（样式，变形之类的），又要在每画一帧之时都是原始状态的话，你需要先保存一下。
+3. **绘制动画图形（animated shapes）**<br>
+   这一步才是重绘动画帧。
+4. **恢复 canvas 状态** <br>
+   如果已经保存了 canvas 的状态，可以先恢复它，然后重绘下一帧。
+5. **操作动画** <br>
+    可以使用定时器setInterval、setTimeout或者 requestAnimationFrame
+
+
+太阳系动画示例：
+
+```js
+var sun = new Image();
+var moon = new Image();
+var earth = new Image();
+function init(){
+  sun.src = 'https://mdn.mozillademos.org/files/1456/Canvas_sun.png';
+  moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
+  earth.src = 'https://mdn.mozillademos.org/files/1429/Canvas_earth.png';
+  window.requestAnimationFrame(draw);
+}
+
+function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+
+  // 在现有的画布内容后面绘制新的图形
+  ctx.globalCompositeOperation = 'destination-over';
+  // clear canvas
+  ctx.clearRect(0,0,300,300); 
+
+  ctx.fillStyle = 'rgba(0,0,0,0.4)';
+  ctx.strokeStyle = 'rgba(0,153,255,0.4)';
+  ctx.save();
+
+  // 设定中心点
+  ctx.translate(150,150);
+
+  // Earth
+  var time = new Date();
+  // 地球旋转
+  ctx.rotate( ((2*Math.PI)/60)*time.getSeconds() + ((2*Math.PI)/60000)*time.getMilliseconds() );
+  // 设置地球旋转中心
+  ctx.translate(105,0);
+  // 制造地球阴影
+  ctx.fillRect(0,-12,50,24); // Shadow
+  ctx.drawImage(earth,-12,-12);
+
+  // Moon
+  ctx.save();
+  ctx.rotate( ((2*Math.PI)/6)*time.getSeconds() + ((2*Math.PI)/6000)*time.getMilliseconds() );
+  ctx.translate(0,28.5);
+  ctx.drawImage(moon,-3.5,-3.5);
+  ctx.restore();
+
+  ctx.restore();
+  
+  ctx.beginPath();
+  ctx.arc(150,150,105,0,Math.PI*2,false); // Earth orbit
+  ctx.stroke();
+ 
+  ctx.drawImage(sun,0,0,300,300);
+
+  window.requestAnimationFrame(draw);
+}
+
+init();
+```
+
+
+[canvas动画练习demo](https://codepen.io/yaohuihou/pen/JjobaJQ)
