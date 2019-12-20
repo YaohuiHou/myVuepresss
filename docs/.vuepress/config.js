@@ -109,6 +109,7 @@ module.exports = {
         'git遇到的问题',
         'mac下xcrun:error',
         'MarkDown编辑高亮',
+        "常见前端名词"
       ]
     },
     //搜索
