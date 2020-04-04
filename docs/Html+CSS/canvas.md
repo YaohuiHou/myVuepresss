@@ -399,7 +399,13 @@ ctx.strokeText('Hello world', 10, 50)
 其中 image 是 image 或者 canvas 对象，x 和 y 是其在目标 canvas 里的起始坐标。
 
 ```js
-drawImage(image, x, y)
+var img = new Image();   // 创建img元素
+img.onload = function(){
+  // 执行drawImage语句
+  ctx.drawImage(image, x, y)
+}
+img.src = 'myImage.png'; // 设置图片源地址
+
 ```
 
 ### 缩放 scaling

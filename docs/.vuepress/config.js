@@ -1,104 +1,107 @@
 module.exports = {
-
-  // title: 'Rancho个人主页',
-  // description: '记录生活，记录成长',
+  title: 'Rancho个人主页',
+  description: '记录生活，记录成长',
   base: '/',
   locales: {
     '/': {
       lang: 'zh-CN',
       title: 'Rancho Life',
-      description: '记录生活，记录成长。'
-    }
+      description: '记录生活，记录成长。',
+    },
   },
   head: [
-    ['link', {
-      rel: 'icon',
-      href: '/img/favicon.ico'
-    }],
-    ['script', {
-      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-    }],
-    ['script', {
-      src: '../js/ga.ad.js'
-    }]
+    [
+      'link',
+      {
+        rel: 'icon',
+        href: '/img/favicon.ico',
+      },
+    ],
+    [
+      'script',
+      {
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+      },
+    ],
+    [
+      'script',
+      {
+        src: '../js/ga.ad.js',
+      },
+    ],
   ],
   //mac下port未生效
   port: 8080,
   serviceWorker: true,
   plugins: [
     ['@vuepress/back-to-top', true],
-    ['@vuepress/pwa', {
-      serviceWorker: true,
-      updatePopup: true
-    }],
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true,
+      },
+    ],
     ['@vuepress/medium-zoom', true],
-    ['@vuepress/google-analytics', {
-      ga: 'UA-136059685-1'
-    }],
+    [
+      '@vuepress/google-analytics',
+      {
+        ga: 'UA-136059685-1',
+      },
+    ],
   ],
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
   },
 
   themeConfig: {
     //gitc 仓库地址
     repo: 'https://github.com/YaohuiHou/YaohuiHou.github.io',
     //导航栏
-    nav: [{
+    nav: [
+      {
         text: 'Home',
-        link: '/'
+        link: '/',
       },
       {
         text: '技术文档',
-        items: [{
+        items: [
+          {
             text: 'Html+CSS',
-            link: '/Html+CSS/'
+            link: '/Html+CSS/',
           },
           {
             text: 'JavaScript',
-            link: '/JavaScript/'
+            link: '/JavaScript/',
           },
           {
             text: 'Node',
-            link: '/Node/'
+            link: '/Node/',
           },
           {
             text: 'SQL',
-            link: '/SQL/'
+            link: '/SQL/',
           },
           {
             text: 'Python',
-            link: '/Python/'
+            link: '/Python/',
           },
-        ]
+        ],
       },
       {
         text: '记录',
-        link: '/notes/'
+        link: '/notes/',
       },
       {
         text: '工具',
-        link: '/tool/'
-      }
+        link: '/tool/',
+      },
     ],
     sidebar: 'auto',
     sidebar: {
-      '/JavaScript/': [
-        'string',
-        'array',
-        'object',
-        '遍历',
-        'regex'
-      ],
-      '/Html+CSS/': [
-        'CSS',
-        'canvas',
-      ],
-      '/Python/': [
-        '基础语法',
-        '数据类型',
-        '函数',
-      ],
+      '/JavaScript/': ['string', 'array', 'object', '遍历', 'regex', 'Class'],
+      '/Html+CSS/': ['CSS', 'canvas'],
+      '/Python/': ['基础语法', '数据类型', '函数'],
       '/notes/': [
         '组件',
         '微信分享',
@@ -109,8 +112,11 @@ module.exports = {
         'git遇到的问题',
         'mac下xcrun:error',
         'MarkDown编辑高亮',
-        "常见前端名词"
-      ]
+        '常见前端名词',
+        'QRCode',
+        'css图片滤镜',
+        'pagemap',
+      ],
     },
     //搜索
     search: true,
@@ -121,13 +127,13 @@ module.exports = {
     serviceWorker: {
       // Boolean | Object, 默认值是 undefined.
       updatePopup: {
-        message: "页面有更新哦~",
-        buttonText: "更新"
-      }
-      // 如果设置为 true, 默认的文本配置将是: 
-      // updatePopup: { 
-      //    message: "New content is available.", 
-      //    buttonText: "Refresh" 
+        message: '页面有更新哦~',
+        buttonText: '更新',
+      },
+      // 如果设置为 true, 默认的文本配置将是:
+      // updatePopup: {
+      //    message: "New content is available.",
+      //    buttonText: "Refresh"
       // }
     },
     // 自定义项目仓库链接文字
@@ -145,6 +151,6 @@ module.exports = {
     // 默认为 false，设置为 true 来启用
     editLinks: true,
     // 自定义编辑链接的文本。默认是 "Edit this page"
-    editLinkText: '帮助我们改进页面内容！'
-  }
+    editLinkText: '帮助我们改进页面内容！',
+  },
 }
