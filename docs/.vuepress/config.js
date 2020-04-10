@@ -1,3 +1,6 @@
+// const { fs, path } = require('vuepress')
+const fs = require('fs')
+const path = require('path')
 module.exports = {
   title: 'Rancho个人主页',
   description: '记录生活，记录成长',
@@ -21,12 +24,6 @@ module.exports = {
       'script',
       {
         src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-      },
-    ],
-    [
-      'script',
-      {
-        src: '../js/ga.ad.js',
       },
     ],
   ],
@@ -89,6 +86,23 @@ module.exports = {
         ],
       },
       {
+        text: '秘籍',
+        items: [
+          {
+            text: 'web教程',
+            link: '/Web/',
+          },
+          {
+            text: '前端面试复习',
+            link: '/offer/',
+          },
+          {
+            text:'前端「壹题」',
+            link:'/datum/'
+          },
+        ],
+      },
+      {
         text: '记录',
         link: '/notes/',
       },
@@ -97,10 +111,9 @@ module.exports = {
         link: '/tool/',
       },
     ],
-    sidebar: 'auto',
     sidebar: {
       '/JavaScript/': ['string', 'array', 'object', '遍历', 'regex', 'Class'],
-      '/Html+CSS/': ['CSS', 'canvas'],
+      '/Html+CSS/': ['canvas'],
       '/Python/': ['基础语法', '数据类型', '函数'],
       '/notes/': [
         '组件',
@@ -113,10 +126,20 @@ module.exports = {
         'mac下xcrun:error',
         'MarkDown编辑高亮',
         '常见前端名词',
+        '常见CSS问题',
         'QRCode',
         'css图片滤镜',
         'pagemap',
       ],
+      '/Web/': getWebInfo(),
+      '/offer/': getOffer(),
+      '/datum/': [
+      {
+        title: '前端面试题',
+        collapsable: false,
+        children: ['summary','JavaScript'],
+      }
+      ]
     },
     //搜索
     search: true,
@@ -153,4 +176,79 @@ module.exports = {
     // 自定义编辑链接的文本。默认是 "Edit this page"
     editLinkText: '帮助我们改进页面内容！',
   },
+}
+
+function getWebInfo() {
+  let officalPluginsChilds = []
+  let nameArr = [
+    '',
+    '前端工具',
+    'HTML',
+    'CSS基础',
+    'CSS进阶',
+    'JavaScript基础',
+    'JavaScript进阶',
+    '前端基本功：CSS+DOM',
+    'jQuery',
+    '移动端web开发',
+    'Ajax',
+    'ES6',
+    'Node.js和模块化',
+    'Vue基础',
+    'React基础',
+    '前端面试',
+    '面试题积累',
+    '前端进阶',
+    '前端综合',
+    '推荐链接',
+  ]
+  let link = path.resolve(__dirname, '../Web/')
+
+  fs.readdirSync(path.resolve(__dirname, '../Web/')).map((filename, index) => {
+    var fname = nameArr[index]
+    var stat = fs.lstatSync(`${link}/${filename}`)
+    var is_direc = stat.isDirectory() // true || false 判断是不是文件夹
+    if (filename.indexOf('.md') == -1 && is_direc) {
+      let childs = fs
+        .readdirSync(path.resolve(__dirname, '../Web/' + filename + '/'))
+        .map((name) => {
+          return filename + '/' + name.slice(0, -3)
+        })
+        .sort()
+
+      let o = {
+        title: fname,
+        collapsable: false,
+        children: childs,
+      }
+      officalPluginsChilds.push(o)
+    }
+  })
+  return officalPluginsChilds
+}
+
+function getOffer() {
+  let offers = []
+  let link = path.resolve(__dirname, '../offer/')
+
+  fs.readdirSync(path.resolve(__dirname, '../offer/')).map((filename) => {
+    var stat = fs.lstatSync(`${link}/${filename}`)
+    var is_direc = stat.isDirectory() // true || false 判断是不是文件夹
+    if (filename.indexOf('.md') == -1 && is_direc) {
+      let childs = fs
+        .readdirSync(path.resolve(__dirname, '../offer/' + filename + '/'))
+        .map((name) => {
+          return filename + '/' + name.slice(0, -3)
+        })
+        .sort()
+
+      let o = {
+        title: filename,
+        collapsable: false,
+        children: childs,
+      }
+      offers.push(o)
+    }
+  })
+  return offers
 }

@@ -29,7 +29,9 @@
           </div>
           <div class="time">2018.09 -</div>
           <div class="description">
-            <p>负责广告平台开发与迭代，栏目、定制化广告专题开发，微信小程序、办公工具类开发</p>
+            <p>
+              负责广告平台开发与迭代，栏目、定制化广告专题开发，微信小程序、办公工具类开发
+            </p>
           </div>
         </article>
         <article class="resume-work">
@@ -40,7 +42,9 @@
           </div>
           <div class="time">2018.05 - 2018.09</div>
           <div class="description">
-            <p>为公司引入小程序开发，独立开发了二手机小程序后，开始了疯狂的小程序开发：铁甲云租赁(工程方/设备方)、工程机械产品库、挖机小工具、铁甲网、替班班</p>
+            <p>
+              为公司引入小程序开发，独立开发了二手机小程序后，开始了疯狂的小程序开发：铁甲云租赁(工程方/设备方)、工程机械产品库、挖机小工具、铁甲网、替班班
+            </p>
           </div>
         </article>
         <article class="resume-work">
@@ -51,7 +55,9 @@
           </div>
           <div class="time">2015.12 - 2018.04</div>
           <div class="description">
-            <p>卡车之家是卡车资讯类网站平台，作为部门第3位前端开发，见证了公司前端技术由无到盛的变革，也是自己技术成长最快的时期。期间负责过商配专题、车商城、问答论坛等项目组。为新人做技术培训。</p>
+            <p>
+              卡车之家是卡车资讯类网站平台，作为部门第3位前端开发，见证了公司前端技术由无到盛的变革，也是自己技术成长最快的时期。期间负责过商配专题、车商城、问答论坛等项目组。为新人做技术培训。
+            </p>
           </div>
         </article>
         <article class="resume-work">
@@ -93,61 +99,18 @@
   </div>
 </template>
 <script>
-import Vue from "vue";
-import ElementUI from "element-ui";
-import "element-ui/lib/theme-chalk/index.css";
+import Vue from 'vue'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
-Vue.use(ElementUI);
+Vue.use(ElementUI)
 
 export default {
   data() {
     return {
-      canvasWidth: "",
-      canvasHeight: "",
-      tabs: ["年轻有为", "前端开发", "男神", "善良亲和爱你们", "推动人类进步"],
-      skillList: [
-        {
-          name: "VUE",
-          progress: 70,
-          color: "#409EFF"
-        },
-        {
-          name: "JavaScript",
-          progress: 80,
-          color: "#409EFF"
-        },
-        {
-          name: "jQuery",
-          progress: 80,
-          color: "#409EFF"
-        },
-        {
-          name: "HTML",
-          progress: 90,
-          color: "#409EFF"
-        },
-        {
-          name: "CSS",
-          progress: 80,
-          color: "#409EFF"
-        },
-        {
-          name: "Python",
-          progress: 50,
-          color: "#409EFF"
-        },
-        {
-          name: "nodeJs",
-          progress: 30,
-          color: "#409EFF"
-        },
-        {
-          name: "mySql",
-          progress: 10,
-          color: "#409EFF"
-        }
-      ]
-    };
+      canvasWidth: '',
+      canvasHeight: '',
+    }
   },
   mounted() {
     // this.gatag();
@@ -157,87 +120,87 @@ export default {
   methods: {
     // ga统计
     gatag() {
-      var script = document.createElement("script"); //1、创建元素
-      script.src = "https://www.googletagmanager.com/gtag/js?id=UA-136059685-1";
-      var body = document.querySelector("body"); //2、找到父级元素
-      body.appendChild(script);
+      var script = document.createElement('script') //1、创建元素
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-136059685-1'
+      var body = document.querySelector('body') //2、找到父级元素
+      body.appendChild(script)
       setTimeout(() => {
-        window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || []
         function gtag() {
-          dataLayer.push(arguments);
+          dataLayer.push(arguments)
         }
-        gtag("js", new Date());
-        gtag("config", "UA-136059685-1");
-      }, 300);
+        gtag('js', new Date())
+        gtag('config', 'UA-136059685-1')
+      }, 300)
     },
     globule() {
-      this.canvasWidth = window.innerWidth;
-      this.canvasHeight = window.innerHeight;
-      var mycanvas = document.getElementById("mycanvas");
+      this.canvasWidth = window.innerWidth
+      this.canvasHeight = window.innerHeight
+      var mycanvas = document.getElementById('mycanvas')
 
-      var ctx = mycanvas.getContext("2d");
+      var ctx = mycanvas.getContext('2d')
       //圆形类
       function Circle(x, y, r, color) {
-        this.x = x;
-        this.y = y;
-        this.r = r;
+        this.x = x
+        this.y = y
+        this.r = r
         // 颜色的取值范围
         this.color =
-          "rgb(" +
+          'rgb(' +
           parseInt(Math.random() * 255) +
-          "," +
+          ',' +
           parseInt(Math.random() * 255) +
-          "," +
+          ',' +
           parseInt(Math.random() * 255) +
-          ")";
+          ')'
         //随机方向
-        this.dx = Math.random() * 12 - 7;
-        this.dy = Math.random() * 12 - 7;
+        this.dx = Math.random() * 12 - 7
+        this.dy = Math.random() * 12 - 7
         //往数组中push自己
-        circleArr.push(this);
+        circleArr.push(this)
       }
       //渲染
-      Circle.prototype.render = function() {
+      Circle.prototype.render = function () {
         //新建一条路径
-        ctx.beginPath();
+        ctx.beginPath()
         //创建一个圆
-        ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, true);
+        ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, true)
         //设置样式颜色
-        ctx.fillStyle = this.color;
+        ctx.fillStyle = this.color
         //通过填充路径的内容区域生成实心的图形
-        ctx.fill();
-      };
+        ctx.fill()
+      }
       //更新
-      Circle.prototype.update = function() {
-        this.x += this.dx / 2;
-        this.y += this.dy / 2;
-        this.r--;
+      Circle.prototype.update = function () {
+        this.x += this.dx / 2
+        this.y += this.dy / 2
+        this.r--
         if (this.r < 0) {
           for (var i = 0; i < circleArr.length; i++) {
             if (circleArr[i] === this) {
-              circleArr.splice(i, 1);
+              circleArr.splice(i, 1)
             }
           }
-          return false;
+          return false
         }
-        return true;
-      };
+        return true
+      }
       //创建一个数组
-      var circleArr = [];
+      var circleArr = []
       //鼠标移动事件
-      mycanvas.onmousemove = function(event) {
-        new Circle(event.clientX, event.clientY, 10, "orange");
-      };
+      mycanvas.onmousemove = function (event) {
+        new Circle(event.clientX, event.clientY, 10, 'orange')
+      }
       //设置定时器每20毫秒更新和渲染
-      setInterval(function() {
-        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      setInterval(function () {
+        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight)
         for (var i = 0; i < circleArr.length; i++) {
-          circleArr[i].update() && circleArr[i].render();
+          circleArr[i].update() && circleArr[i].render()
         }
-      }, 50);
-    }
-  }
-};
+      }, 50)
+    },
+  },
+}
 </script>
 <style lang="less">
 /* BASIC */
@@ -325,7 +288,7 @@ export default {
 }
 
 .en .story.highlight:after {
-  content: "⊙";
+  content: '⊙';
   position: absolute;
   left: -1.5em;
   top: -0.25em;
@@ -443,7 +406,7 @@ html.cn {
 }
 
 .cn .story.highlight:after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: -2rem;
   right: -1rem;
@@ -503,7 +466,7 @@ html.cn {
 }
 
 .cn .content ul li:after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 0;
   left: 0;
@@ -676,5 +639,3 @@ html.cn {
   }
 }
 </style>
-
-

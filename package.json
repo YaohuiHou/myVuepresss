@@ -12,7 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "animate.css": "^3.7.0",
-    "echarts": "^4.1.0",
     "element-ui": "^2.4.0",
     "exif-js": "^2.3.0",
     "jquery": "^3.4.1",
@@ -21,6 +20,8 @@
     "tinify": "^1.6.0-beta.2"
   },
   "devDependencies": {
-    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0"
+    "@vuepress/plugin-active-header-links": "^1.4.0",
+    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0",
+    "@vuepress/shared-utils": "^1.4.0"
   }
 }
