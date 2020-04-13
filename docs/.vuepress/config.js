@@ -13,19 +13,10 @@ module.exports = {
     },
   },
   head: [
-    [
-      'link',
-      {
-        rel: 'icon',
-        href: '/img/favicon.ico',
-      },
-    ],
-    [
-      'script',
-      {
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-      },
-    ],
+    ['link',{rel: 'icon',href: '/img/favicon.ico',}],
+    ['script',{ src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',}],
+    ['script',{ src: 'https://www.googletagmanager.com/gtag/js?id=UA-136059685-1',}],
+    ['script',{ src: '/js/ga.ad.js',}],
   ],
   //mac下port未生效
   port: 8080,
@@ -72,6 +63,10 @@ module.exports = {
             link: '/JavaScript/',
           },
           {
+            text:'ES6',
+            link: 'http://caibaojian.com/es6/'
+          },
+          {
             text: 'Node',
             link: '/Node/',
           },
@@ -82,7 +77,7 @@ module.exports = {
           {
             text: 'Python',
             link: '/Python/',
-          },
+          }
         ],
       },
       {
