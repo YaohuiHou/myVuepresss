@@ -14,7 +14,7 @@ module.exports = {
   },
   head: [
     ['link',{rel: 'icon',href: '/img/favicon.ico',}],
-    ['script',{ src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',}],
+    ['script',{ src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',async:'async','data-ad-client':'ca-pub-2789633452670180'}],
     ['script',{ src: 'https://www.googletagmanager.com/gtag/js?id=UA-136059685-1',}],
     ['script',{ src: '/js/ga.ad.js',}],
   ],
@@ -76,7 +76,7 @@ module.exports = {
           },
           {
             text: 'Python',
-            link: '/Python/',
+            link: 'https://www.readwithu.com/',
           }
         ],
       },
@@ -107,9 +107,8 @@ module.exports = {
       },
     ],
     sidebar: {
-      '/JavaScript/': ['string', 'array', 'object', '遍历', 'regex', 'Class'],
+      '/JavaScript/': ['string', 'array', 'object', '遍历', 'regex'],
       '/Html+CSS/': ['canvas'],
-      '/Python/': ['基础语法', '数据类型', '函数'],
       '/notes/': [
         '组件',
         '微信分享',
@@ -127,7 +126,8 @@ module.exports = {
         'pagemap',
       ],
       '/Web/': getWebInfo(),
-      '/offer/': getOffer(),
+      '/offer/': getOffer('offer'),
+      '/Node/': getNode(),
       '/datum/': [
       {
         title: '前端面试题',
@@ -222,16 +222,16 @@ function getWebInfo() {
   return officalPluginsChilds
 }
 
-function getOffer() {
+function getOffer(getName) {
   let offers = []
-  let link = path.resolve(__dirname, '../offer/')
+  let link = path.resolve(__dirname, `../${getName}/`)
 
-  fs.readdirSync(path.resolve(__dirname, '../offer/')).map((filename) => {
+  fs.readdirSync(path.resolve(__dirname, `../${getName}/`)).map((filename) => {
     var stat = fs.lstatSync(`${link}/${filename}`)
     var is_direc = stat.isDirectory() // true || false 判断是不是文件夹
     if (filename.indexOf('.md') == -1 && is_direc) {
       let childs = fs
-        .readdirSync(path.resolve(__dirname, '../offer/' + filename + '/'))
+        .readdirSync(path.resolve(__dirname, `../${getName}/${filename}/`))
         .map((name) => {
           return filename + '/' + name.slice(0, -3)
         })
@@ -246,4 +246,93 @@ function getOffer() {
     }
   })
   return offers
+}
+
+function getNode() {
+  let arr =  [
+  ,['资源压缩-zlib',
+  '/模块/zlib.md']
+  ,['文件系统操作-fs',
+  '/模块/fs.md']
+  ,['域名解析-dns',
+  '/模块/dns.md']
+  ,['网络服务-http',
+  '/模块/http.md']
+  ,['网络服务-http-req',
+  '/模块/http.req.md']
+  ,['网络服务-http-res',
+  '/模块/http.res.md']
+  ,['网络服务-http-client',
+  '/模块/http.client.md']
+  ,['网络服务-http-server',
+  '/模块/http.server.md']
+  ,['网络服务-https',
+  '/模块/https.md']
+  ,['网络TCP-net',
+  '/模块/net.md']
+  ,['网络UDP-dgram',
+  '/模块/dgram.md']
+  ,['网络地址解析-url',
+  '/模块/url.md']
+  ,['数据加密-crypto',
+  '/模块/crypto.md']
+  ,['URL查询字符串-querystring',
+  '/模块/querystring.md']
+  ,['二进制数据-buffer',
+  '/模块/buffer.md']
+  ,['子进程-child_process',
+  '/模块/child_process.md']
+  ,['进程相关-process',
+  '/模块/process.md']
+  ,['集群-cluster',
+  '/模块/cluster.md']
+  ,['基础调试-console',
+  '/模块/console.md']
+  ,['进阶调试-debugger',
+  '/模块/debug.md'],
+  ,['事件机制-events',
+  '/模块/events.md'],
+  ,['本地路径处理-path',
+  '/模块/path.md']
+  ,['逐行读取-readline',
+  '/模块/readline.md'],
+  ,['实用工具模块-util',
+  '/模块/util.md']
+  ,['流操作-stream',
+  '/模块/stream.md']
+  ,['二进制解码-string_decoder',
+  '/模块/string_decoder.md'],
+  ,['Nodejs进阶：服务端字符编解码&乱码处理',
+  '/进阶/charset-enc-dec.md']
+  ,['Nodejs进阶：MD5入门介绍及crypto模块的应用',
+  '/模块/crypto.md5.md']
+  ,['Nodejs 进阶：Express 常用中间件 body-parser 实现解析',
+  '/进阶/body-parser.md']
+  ,['基于express+muter的文件上传',
+  '/进阶/文件上传-multer.md']
+  ,['将图片转成datauri嵌入到html',
+  '/进阶/图片地址转成datauri.md']
+  ,['本地调试远程服务器上的Node代码',
+  '/模块/debug.md']
+  ,['express+session实现简易身份认证',
+  '/进阶/express+session实现简易身份认证.md']
+  ,['express+morgan：从入门使用到源码剖析',
+  '/进阶/日志模块morgan.md']
+  ,['express+cookie-parser：签名机制深入剖析','/进阶/cookie-parser-deep-in.md']
+  ,['Nodejs 进阶：log4js入门实例','/进阶/log4js.md']
+  ,['调试日志打印：debug模块','/进阶/debug-log.md']
+  ,['Nodejs进阶：crypto模块之理论篇','/进阶/crypto-theory.md']
+  ,['Nodejs进阶：5分钟入门非对称加密用法','/进阶/asymmetric-enc-dec.md']
+]
+  let childs = []
+  arr.forEach(item=>{
+    childs.push(item[1].slice(1, -3))
+  })
+  return [
+      {
+        title: '学习',
+        collapsable: false,
+        children: childs,
+      }
+    ];
 }

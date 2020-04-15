@@ -2,11 +2,13 @@
 
 注：本文已经整理成电子书：[《JavaScript 正则迷你书》](https://juejin.im/post/59cc61176fb9a00a437b290b)
 
+[JavaScript正则表达式迷你书（1.1版）.pdf](./regexjspdf.pdf)
+
+
 > 本文转自 掘金【老姚】 著作权归作者所有。侵删！
 
 [掘金【老姚】链接](https://juejin.im/post/5965943ff265da6c30653879)
 
-[![掘金【老姚】链接](https://user-gold-cdn.xitu.io/2017/7/12/4b5019181a1aa3729b5e36b41aecf6a2?imageView2/1/w/1304/h/734/q/85/format/webp/interlace/1)](https://juejin.im/post/5965943ff265da6c30653879)
 
 ### 引言
 

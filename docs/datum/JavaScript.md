@@ -9,7 +9,7 @@
 
 ---
 
-###### 1. 输出是什么？
+## 1. 输出是什么？
 
 ```javascript
 function sayHi() {
@@ -41,7 +41,7 @@ sayHi()
 
 ---
 
-###### 2. 输出是什么？
+## 2. 输出是什么？
 
 ```javascript
 for (var i = 0; i < 3; i++) {
@@ -71,7 +71,7 @@ for (let i = 0; i < 3; i++) {
 
 ---
 
-###### 3. 输出是什么？
+## 3. 输出是什么？
 
 ```javascript
 const shape = {
@@ -107,7 +107,7 @@ shape.perimeter()
 
 ---
 
-###### 4. 输出是什么？
+## 4. 输出是什么？
 
 ```javascript
 +true;
@@ -132,7 +132,7 @@ shape.perimeter()
 
 ---
 
-###### 5. 哪一个是正确的？
+## 5. 哪一个是正确的？
 
 ```javascript
 const bird = {
@@ -169,7 +169,7 @@ const mouse = {
 ---
 
 
-###### 6. 输出是什么？
+## 6. 输出是什么？
 
 ```javascript
 let c = { greeting: 'Hey!' }
@@ -203,7 +203,7 @@ console.log(d.greeting)
 
 ---
 
-###### 7. 输出是什么？
+## 7. 输出是什么？
 
 ```javascript
 let a = 3
@@ -236,7 +236,7 @@ console.log(b === c)
 
 ---
 
-###### 8. 输出是什么？
+## 8. 输出是什么？
 
 ```javascript
 class Chameleon {
@@ -271,7 +271,7 @@ freddie.colorChange('orange')
 
 ---
 
-###### 9. 输出是什么？
+## 9. 输出是什么？
 
 ```javascript
 let greeting
@@ -297,7 +297,7 @@ console.log(greetign)
 
 ---
 
-###### 10. 当我们这么做时，会发生什么？
+## 10. 当我们这么做时，会发生什么？
 
 ```javascript
 function bark() {
@@ -326,7 +326,7 @@ bark.animal = 'dog'
 
 ---
 
-###### 11. 输出是什么？
+## 11. 输出是什么？
 
 ```javascript
 function Person(firstName, lastName) {
@@ -367,7 +367,7 @@ Person.prototype.getFullName = function () {
 
 ---
 
-###### 12. 输出是什么？
+## 12. 输出是什么？
 
 ```javascript
 function Person(firstName, lastName) {
@@ -401,7 +401,7 @@ console.log(sarah)
 
 ---
 
-###### 13. 事件传播的三个阶段是什么？
+## 13. 事件传播的三个阶段是什么？
 
 - A: Target > Capturing > Bubbling
 - B: Bubbling > Target > Capturing
@@ -422,7 +422,7 @@ console.log(sarah)
 
 ---
 
-###### 14. 所有对象都有原型。
+## 14. 所有对象都有原型。
 
 - A: 对
 - B: 错
@@ -439,7 +439,7 @@ console.log(sarah)
 
 ---
 
-###### 15. 输出是什么？
+## 15. 输出是什么？
 
 ```javascript
 function sum(a, b) {
@@ -468,7 +468,7 @@ JavaScript 是一种**动态类型语言**：我们不指定某些变量的类�
 
 ---
 
-###### 16. 输出是什么？
+## 16. 输出是什么？
 
 ```javascript
 let number = 0
@@ -504,7 +504,7 @@ console.log(number)
 
 ---
 
-###### 17. 输出是什么？
+## 17. 输出是什么？
 
 ```javascript
 function getPersonInfo(one, two, three) {
@@ -535,7 +535,7 @@ getPersonInfo`${person} is ${age} years old`
 
 ---
 
-###### 18. 输出是什么？
+## 18. 输出是什么？
 
 ```javascript
 function checkAge(data) {
@@ -571,7 +571,7 @@ checkAge({ age: 18 })
 
 ---
 
-###### 19. 输出是什么？
+## 19. 输出是什么？
 
 ```javascript
 function getAge(...args) {
@@ -598,7 +598,7 @@ getAge(21)
 
 ---
 
-###### 20. 输出是什么？
+## 20. 输出是什么？
 
 ```javascript
 function getAge() {
@@ -627,7 +627,7 @@ getAge()
 
 ---
 
-###### 21. 输出是什么？
+## 21. 输出是什么？
 
 ```javascript
 const sum = eval('10*10+5')
@@ -650,7 +650,7 @@ const sum = eval('10*10+5')
 
 ---
 
-###### 22. cool_secret 可访问多长时间？
+## 22. cool_secret 可访问多长时间？
 
 ```javascript
 sessionStorage.setItem('cool_secret', 123)
@@ -675,7 +675,7 @@ sessionStorage.setItem('cool_secret', 123)
 
 ---
 
-###### 23. 输出是什么？
+## 23. 输出是什么？
 
 ```javascript
 var num = 8
@@ -703,7 +703,7 @@ console.log(num)
 
 ---
 
-###### 24. 输出是什么？
+## 24. 输出是什么？
 
 ```javascript
 const obj = { 1: 'a', 2: 'b', 3: 'c' }
@@ -734,7 +734,7 @@ set.has(1)
 
 ---
 
-###### 25. 输出是什么？
+## 25. 输出是什么？
 
 ```javascript
 const obj = { a: 'one', b: 'two', a: 'three' }
@@ -758,7 +758,7 @@ console.log(obj)
 
 ---
 
-###### 26. JavaScript 全局执行上下文为你做了两件事：全局对象和 this 关键字。
+## 26. JavaScript 全局执行上下文为你做了两件事：全局对象和 this 关键字。
 
 - A: 对
 - B: 错
@@ -776,7 +776,7 @@ console.log(obj)
 
 ---
 
-###### 27. 输出是什么？
+## 27. 输出是什么？
 
 ```javascript
 for (let i = 1; i < 5; i++) {
@@ -802,7 +802,7 @@ for (let i = 1; i < 5; i++) {
 
 ---
 
-###### 28. 输出是什么？
+## 28. 输出是什么？
 
 ```javascript
 String.prototype.giveLydiaPizza = () => {
@@ -831,7 +831,7 @@ name.giveLydiaPizza()
 
 ---
 
-###### 29. 输出是什么？
+## 29. 输出是什么？
 
 ```javascript
 const a = {}
@@ -865,7 +865,7 @@ console.log(a[b])
 
 ---
 
-###### 30. 输出是什么？
+## 30. 输出是什么？
 
 ```javascript
 const foo = () => console.log('First')
@@ -918,7 +918,7 @@ WebAPI 不能随时向栈内添加内容。相反，它将回调函数推到名�
 
 ---
 
-###### 31. 当点击按钮时，event.target是什么？
+## 31. 当点击按钮时，event.target是什么？
 
 ```html
 <div onclick="console.log('first div')">
@@ -947,7 +947,7 @@ WebAPI 不能随时向栈内添加内容。相反，它将回调函数推到名�
 
 ---
 
-###### 32. 当您单击该段落时，日志输出是什么？
+## 32. 当您单击该段落时，日志输出是什么？
 
 ```html
 <div onclick="console.log('div')">
@@ -974,7 +974,7 @@ WebAPI 不能随时向栈内添加内容。相反，它将回调函数推到名�
 
 ---
 
-###### 33. 输出是什么？
+## 33. 输出是什么？
 
 ```javascript
 const person = { name: 'Lydia' }
@@ -1006,7 +1006,7 @@ sayHi.bind(person, 21)
 
 ---
 
-###### 34. 输出是什么？
+## 34. 输出是什么？
 
 ```javascript
 function sayHi() {
@@ -1035,7 +1035,7 @@ typeof sayHi()
 
 ---
 
-###### 35. 下面哪些值是 falsy?
+## 35. 下面哪些值是 falsy?
 
 ```javascript
 0
@@ -1074,7 +1074,7 @@ undefined
 
 ---
 
-###### 36. 输出是什么？
+## 36. 输出是什么？
 
 ```javascript
 console.log(typeof typeof 1)
@@ -1098,7 +1098,7 @@ console.log(typeof typeof 1)
 
 ---
 
-###### 37. 输出是什么？
+## 37. 输出是什么？
 
 ```javascript
 const numbers = [1, 2, 3]
@@ -1127,7 +1127,7 @@ console.log(numbers)
 
 ---
 
-###### 38. 输出是什么？
+## 38. 输出是什么？
 
 ```javascript
 (() => {
@@ -1164,7 +1164,7 @@ console.log(numbers)
 
 ---
 
-###### 39. JavaScript 中的一切都是？
+## 39. JavaScript 中的一切都是？
 
 - A: 基本类型与对象
 - B: 函数与对象
@@ -1185,7 +1185,7 @@ JavaScript 只有基本类型和对象。
 
 ---
 
-###### 40. 输出是什么？
+## 40. 输出是什么？
 
 ```javascript
 [[0, 1], [2, 3]].reduce(
@@ -1214,7 +1214,7 @@ JavaScript 只有基本类型和对象。
 
 ---
 
-###### 41. 输出是什么？
+## 41. 输出是什么？
 
 ```javascript
 !!null
@@ -1243,7 +1243,7 @@ JavaScript 只有基本类型和对象。
 
 ---
 
-###### 42. `setInterval` 方法的返回值是什么？
+## 42. `setInterval` 方法的返回值是什么？
 
 ```javascript
 setInterval(() => console.log('Hi'), 1000)
@@ -1266,7 +1266,7 @@ setInterval(() => console.log('Hi'), 1000)
 
 ---
 
-###### 43. 输出是什么？
+## 43. 输出是什么？
 
 ```javascript
 [...'Lydia']
@@ -1289,7 +1289,7 @@ string 类型是可迭代的。扩展运算符将迭代的每个字符映射成�
 
 ---
 
-###### 44. 输出是什么?
+## 44. 输出是什么?
 
 ```javascript
 function* generator(i) {
@@ -1323,7 +1323,7 @@ console.log(gen.next().value);
 </p>
 </details>
 
-###### 45. 返回值是什么?
+## 45. 返回值是什么?
 
 ```javascript
 const firstPromise = new Promise((res, rej) => {
@@ -1354,7 +1354,7 @@ Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
 
 ---
 
-###### 46. 输出是什么?
+## 46. 输出是什么?
 
 ```javascript
 let person = { name: "Lydia" };
@@ -1394,7 +1394,7 @@ console.log(members);
 
 ---
 
-###### 47. 输出是什么?
+## 47. 输出是什么?
 
 ```javascript
 const person = {
@@ -1424,7 +1424,7 @@ for (const item in person) {
 
 ---
 
-###### 48. 输出是什么?
+## 48. 输出是什么?
 
 ```javascript
 console.log(3 + 4 + "5");
@@ -1451,7 +1451,7 @@ console.log(3 + 4 + "5");
 
 ---
 
-###### 49. `num`的值是什么?
+## 49. `num`的值是什么?
 
 ```javascript
 const num = parseInt("7*6", 10);
@@ -1476,7 +1476,7 @@ const num = parseInt("7*6", 10);
 
 ---
 
-###### 50. 输出是什么?
+## 50. 输出是什么?
 
 ```javascript
 [1, 2, 3].map(num => {
@@ -1504,7 +1504,7 @@ const num = parseInt("7*6", 10);
 
 ---
 
-###### 51. 输出的是什么?
+## 51. 输出的是什么?
 
 ```javascript
 function getInfo(member, year) {
@@ -1541,7 +1541,7 @@ console.log(person, birthYear);
 
 ---
 
-###### 52. 输出是什么?
+## 52. 输出是什么?
 
 ```javascript
 function greeting() {
@@ -1579,7 +1579,7 @@ sayHi();
 
 ---
 
-###### 53. 输出是什么?
+## 53. 输出是什么?
 
 ```javascript
 function Car() {
@@ -1608,7 +1608,7 @@ console.log(myCar.make);
 
 ---
 
-###### 54. 输出是什么?
+## 54. 输出是什么?
 
 ```javascript
 (() => {
@@ -1647,7 +1647,7 @@ let x = y;
 
 ---
 
-###### <a name=20190629></a>55. 输出是什么?
+## <a name=20190629></a>55. 输出是什么?
 
 ```javascript
 class Dog {
@@ -1688,7 +1688,7 @@ pet.bark();
 
 ---
 
-###### 56. 输出是什么?
+## 56. 输出是什么?
 
 ```javascript
 const set = new Set([1, 1, 2, 3, 4]);
@@ -1715,7 +1715,7 @@ console.log(set);
 
 ---
 
-###### 57. 输出是什么?
+## 57. 输出是什么?
 
 ```javascript
 // counter.js
@@ -1751,7 +1751,7 @@ console.log(myCounter);
 
 ---
 
-###### 58. 输出是什么?
+## 58. 输出是什么?
 
 ```javascript
 const name = "Lydia";
@@ -1780,7 +1780,7 @@ console.log(delete age);
 
 ---
 
-###### 59. 输出是什么?
+## 59. 输出是什么?
 
 ```javascript
 const numbers = [1, 2, 3, 4, 5];
@@ -1822,7 +1822,7 @@ console.log(y);
 
 ---
 
-###### 60. 输出是什么?
+## 60. 输出是什么?
 
 ```javascript
 const user = { name: "Lydia", age: 21 };
@@ -1848,7 +1848,7 @@ console.log(admin);
 
 ---
 
-###### 61. 输出是什么?
+## 61. 输出是什么?
 
 ```javascript
 const person = { name: "Lydia" };
@@ -1878,7 +1878,7 @@ console.log(Object.keys(person));
 
 ---
 
-###### 62. 输出是什么?
+## 62. 输出是什么?
 
 ```javascript
 const settings = {
@@ -1913,7 +1913,7 @@ console.log(data);
 
 ---
 
-###### 63. 输出是什么?
+## 63. 输出是什么?
 
 ```javascript
 let num = 10;
@@ -1947,7 +1947,7 @@ console.log(num2);
 
 ---
 
-###### 64. 输出什么?
+## 64. 输出什么?
 
 ```javascript
 const value = { number: 10 };
@@ -1985,7 +1985,7 @@ multiply(value);
 
 ---
 
-###### 65. 输出什么?
+## 65. 输出什么?
 
 ```javascript
 [1, 2, 3, 4].reduce((x, y) => console.log(x, y));
@@ -2024,7 +2024,7 @@ multiply(value);
 
 ---
 
-###### 66. 使用哪个构造函数可以成功继承`Dog`类?
+## 66. 使用哪个构造函数可以成功继承`Dog`类?
 
 ```javascript
 class Dog {
@@ -2077,7 +2077,7 @@ class Labrador extends Dog {
 
 ---
 
-###### 67. 输出什么?
+## 67. 输出什么?
 
 ```javascript
 // index.js
@@ -2109,7 +2109,7 @@ export const sum = (a, b) => a + b;
 
 ---
 
-###### 68. 输出什么?
+## 68. 输出什么?
 
 ```javascript
 console.log(Number(2) === Number(2))
@@ -2134,7 +2134,7 @@ console.log(Symbol('foo') === Symbol('foo'))
 
 ---
 
-###### 69. 输出什么?
+## 69. 输出什么?
 
 ```javascript
 const name = "Lydia Hallie"
@@ -2161,7 +2161,7 @@ console.log(name.padStart(2))
 
 ---
 
-###### 70. 输出什么?
+## 70. 输出什么?
 
 ```javascript
 console.log("🥑" + "💻");
@@ -2184,7 +2184,7 @@ console.log("🥑" + "💻");
 
 ---
 
-###### 71. 如何能打印出`console.log`语句后注释掉的值？
+## 71. 如何能打印出`console.log`语句后注释掉的值？
 
 ```javascript
 function* startGame() {
@@ -2219,7 +2219,7 @@ console.log(/* 2 */); // JavaScript loves you back ❤️
 
 ---
 
-###### 72. 输出什么?
+## 72. 输出什么?
 
 ```javascript
 console.log(String.raw`Hello\nworld`);
@@ -2259,7 +2259,7 @@ String.raw`C:\Documents\Projects\table.html`
 
 ---
 
-###### 73. 输出什么?
+## 73. 输出什么?
 
 ```javascript
 async function getData() {
@@ -2293,7 +2293,7 @@ console.log(data);
 
 ---
 
-###### 74. 输出什么?
+## 74. 输出什么?
 
 ```javascript
 function addToList(item, list) {
@@ -2323,7 +2323,7 @@ console.log(result);
 
 ---
 
-###### 75. 输出什么?
+## 75. 输出什么?
 
 ```javascript
 const box = { x: 10, y: 20 };
@@ -2358,7 +2358,7 @@ console.log(shape)
 
 ---
 
-###### 76. 输出什么?
+## 76. 输出什么?
 
 ```javascript
 const { name: myName } = { name: "Lydia" };
@@ -2387,7 +2387,7 @@ console.log(name);
 
 ---
 
-###### 77. 以下是个纯函数么?
+## 77. 以下是个纯函数么?
 
 ```javascript
 function sum(a, b) {
@@ -2412,7 +2412,7 @@ function sum(a, b) {
 
 ---
 
-###### 78. 输出什么?
+## 78. 输出什么?
 
 ```javascript
 const add = () => {
@@ -2461,7 +2461,7 @@ console.log(addFunction(5 * 2));
 
 ---
 
-###### <a name=20190726></a>79. 输出什么?
+## <a name=20190726></a>79. 输出什么?
 
 ```javascript
 const myLifeSummedUp = ["☕", "💻", "🍷", "🍫"]
@@ -2498,7 +2498,7 @@ for (let item of myLifeSummedUp) {
 
 ---
 
-###### 80. 输出什么?
+## 80. 输出什么?
 
 ```javascript
 const list = [1 + 2, 1 * 2, 1 / 2]
@@ -2524,7 +2524,7 @@ console.log(list)
 
 ---
 
-###### 81. 输出什么?
+## 81. 输出什么?
 
 ```javascript
 function sayHi(name) {
@@ -2557,7 +2557,7 @@ console.log(sayHi())
 
 ---
 
-###### 82. 输出什么?
+## 82. 输出什么?
 
 ```javascript
 var status = "😎"
@@ -2595,7 +2595,7 @@ setTimeout(() => {
 
 ---
 
-###### 83. 输出什么?
+## 83. 输出什么?
 
 ```javascript
 const person = {
@@ -2632,7 +2632,7 @@ console.log(person)
 
 ---
 
-###### 84. 输出什么?
+## 84. 输出什么?
 
 ```javascript
 function checkAge(age) {
@@ -2665,7 +2665,7 @@ console.log(checkAge(21))
 
 ---
 
-###### 85. 什么样的信息将被打印?
+## 85. 什么样的信息将被打印?
 
 ```javascript
 fetch('https://www.website.com/api/user/1')
@@ -2690,7 +2690,7 @@ fetch('https://www.website.com/api/user/1')
 
 ---
 
-###### 86. 哪个选项是将`hasName`设置为`true`的方法，前提是不能将`true`作为参数传递?
+## 86. 哪个选项是将`hasName`设置为`true`的方法，前提是不能将`true`作为参数传递?
 
 ```javascript
 function getName(name) {
@@ -2719,7 +2719,7 @@ function getName(name) {
 </p>
 </details>
 
-###### 87. 输出什么?
+## 87. 输出什么?
 
 ```javascript
 console.log("I want pizza"[0])
@@ -2744,7 +2744,7 @@ console.log("I want pizza"[0])
 
 ---
 
-###### 88. 输出什么?
+## 88. 输出什么?
 
 ```javascript
 function sum(num1, num2 = num1) {
@@ -2781,7 +2781,7 @@ test(3, 4) // 3 4
 
 ---
 
-###### 89. 输出什么?
+## 89. 输出什么?
 
 ```javascript
 // module.js 
@@ -2813,7 +2813,7 @@ console.log(data)
 
 ---
 
-###### 90. 输出什么?
+## 90. 输出什么?
 
 ```javascript
 class Person {
@@ -2851,7 +2851,7 @@ function Person() {
 
 ---
 
-###### 91. 输出什么?
+## 91. 输出什么?
 
 ```javascript
 let newList = [1, 2, 3].push(4)
@@ -2878,7 +2878,7 @@ console.log(newList.push(5))
 
 ---
 
-###### 92. 输出什么?
+## 92. 输出什么?
 
 ```javascript
 function giveLydiaPizza() {
@@ -2908,7 +2908,7 @@ console.log(giveLydiaChocolate.prototype)
 
 ---
 
-###### 93. 输出什么?
+## 93. 输出什么?
 
 ```javascript
 const person = {
@@ -2944,7 +2944,7 @@ for (const [x, y] of Object.entries(person)) {
 
 ---
 
-###### 94. 输出什么?
+## 94. 输出什么?
 
 ```javascript
 function getItems(fruitList, ...args, favoriteFruit) {
@@ -2980,7 +2980,7 @@ getItems(["banana", "apple"], "pear", "orange")
 
 ---
 
-###### <a name=20190817></a>95. 输出什么?
+## <a name=20190817></a>95. 输出什么?
 
 ```javascript
 function nums(a, b) {
@@ -3024,7 +3024,7 @@ console.log(nums(1, 2))
 
 ---
 
-###### 96. 输出什么?
+## 96. 输出什么?
 
 ```javascript
 class Person {
@@ -3062,7 +3062,7 @@ console.log(member.name)
 
 ---
 
-###### 97. 输出什么?
+## 97. 输出什么?
 
 ```javascript
 const info = {
@@ -3093,7 +3093,7 @@ console.log(Object.keys(info))
 
 ---
 
-###### 98. 输出什么?
+## 98. 输出什么?
 
 ```javascript
 const getList = ([x, ...y]) => [x, y]
@@ -3134,7 +3134,7 @@ console.log(getUser(user))
 
 ---
 
-###### 99. 输出什么?
+## 99. 输出什么?
 
 ```javascript
 const name = "Lydia"
@@ -3165,7 +3165,7 @@ console.log(name())
 
 ---
 
-###### 100. 输出什么?
+## 100. 输出什么?
 
 ```javascript
 // 🎉✨ This is my 100th question! ✨🎉
@@ -3194,7 +3194,7 @@ You should${'' && `n't`} see a therapist after so much JavaScript lol`
 
 ---
 
-###### 101.输出什么?
+## 101.输出什么?
 
 ```javascript
 const one = (false || {} || null)
@@ -3227,7 +3227,7 @@ console.log(one, two, three)
 
 ---
 
-###### 102. 依次输出什么?
+## 102. 依次输出什么?
 
 ```javascript
 const myPromise = () => Promise.resolve('I have resolved!')
@@ -3271,7 +3271,7 @@ secondFunction()
 
 ---
 
-###### 103. 输出什么?
+## 103. 输出什么?
 
 ```javascript
 const set = new Set()
@@ -3308,7 +3308,7 @@ for (let item of set) {
 
 ---
 
-###### 104. 结果是什么?
+## 104. 结果是什么?
 
 ```javascript
 Promise.resolve(5)
@@ -3332,7 +3332,7 @@ Promise.resolve(5)
 </details>
 
 
-###### 105. 输出什么?
+## 105. 输出什么?
 
 ```javascript
 function compareMembers(person1, person2 = person) {
@@ -3371,7 +3371,7 @@ compareMembers(person)
 
 ---
 
-###### 106. 输出什么?
+## 106. 输出什么?
 
 
 ```javascript
@@ -3411,7 +3411,7 @@ JavaScript解释（或取消装箱）语句。 当我们使用方括号表示法
 
 ---
 
-###### 107. 输出什么?
+## 107. 输出什么?
 
 ```javascript
 console.log('❤️' === '❤️')
@@ -3432,7 +3432,7 @@ console.log('❤️' === '❤️')
 
 ---
 
-###### 108. 哪些方法修改了原数组?
+## 108. 哪些方法修改了原数组?
 
 
 ```javascript
@@ -3465,7 +3465,7 @@ emojis.splice(1, 2, '✨')
 
 ---
 
-###### <a name=20191009></a>109. 输出什么?
+## <a name=20191009></a>109. 输出什么?
 
 ```javascript
 const food = ['🍕', '🍫', '🥑', '🍔']
@@ -3495,7 +3495,7 @@ console.log(food)
 
 ---
 
-###### 110. 这个函数干了什么?
+## 110. 这个函数干了什么?
 
 ```javascript
 JSON.parse()
@@ -3532,7 +3532,7 @@ JSON.parse(jsonArray) // { name: 'Lydia' }
 
 ---
 
-###### 111. 输出什么? 
+## 111. 输出什么? 
 
 ```javascript
 let name = 'Lydia'
@@ -3576,7 +3576,7 @@ getName() // Lydia
 
 ---
 
-###### 112. 输出什么？
+## 112. 输出什么？
 
 ```javascript
 function* generatorOne() {
@@ -3627,7 +3627,7 @@ console.log(two.next().value) // undefined
 
 ---
 
-###### 113. 输出什么？
+## 113. 输出什么？
 
 ```javascript
 console.log(`${(x => x)('I love')} to program`)
@@ -3650,7 +3650,7 @@ console.log(`${(x => x)('I love')} to program`)
 
 ---
 
-###### 114. 将会发生什么?
+## 114. 将会发生什么?
 
 ```javascript
 let config = {
@@ -3679,7 +3679,7 @@ config = null
 
 ---
 
-###### 115. 哪一个方法会返回 `'Hello world!'` ？
+## 115. 哪一个方法会返回 `'Hello world!'` ？
 
 ```javascript
 const myMap = new Map()
@@ -3715,7 +3715,7 @@ myMap.get(() => 'greeting')
 
 ---
 
-###### 116. 输出什么？
+## 116. 输出什么？
 
 ```javascript
 const person = {
@@ -3756,7 +3756,7 @@ console.log(person)
 
 ---
 
-###### 117. 下面那个选项将会返回 `6`?
+## 117. 下面那个选项将会返回 `6`?
 
 ```javascript
 function sumValues(x, y, z) {
@@ -3781,7 +3781,7 @@ function sumValues(x, y, z) {
 
 ---
 
-###### 118. 输出什么？
+## 118. 输出什么？
 
 ```javascript
 let num = 1;
@@ -3807,7 +3807,7 @@ console.log(list[(num += 1)]);
 
 ---
 
-###### 119. 输出什么？
+## 119. 输出什么？
 
 ```javascript
 const person = {
@@ -3850,7 +3850,7 @@ console.log(member.getLastName?.());
 
 ---
 
-###### 120. 输出什么？
+## 120. 输出什么？
 
 ```javascript
 const groceries = ["banana", "apple", "peanuts"];
@@ -3879,7 +3879,7 @@ if (groceries.indexOf("banana")) {
 
 ---
 
-###### 121. 输出什么?
+## 121. 输出什么?
 
 ```javascript
 const config = {
@@ -3909,7 +3909,7 @@ console.log(config.language);
 
 ---
 
-###### 122. 输出什么？
+## 122. 输出什么？
 
 ```javascript
 const name = "Lydia Hallie";
@@ -3937,7 +3937,7 @@ console.log(!typeof name === "string");
 
 ---
 
-###### 123. 输出什么?
+## 123. 输出什么?
 
 ```javascript
 const add = x => y => z => {
@@ -3965,7 +3965,7 @@ add(4)(5)(6);
 
 ---
 
-###### 124. 输出什么？
+## 124. 输出什么？
 
 ```javascript
 async function* range(start, end) {
@@ -3999,7 +3999,7 @@ async function* range(start, end) {
 
 ---
 
-###### 125. 输出什么？
+## 125. 输出什么？
 
 ```javascript
 const myFunc = ({ x, y, z }) => {
@@ -4026,7 +4026,7 @@ myFunc(1, 2, 3);
 
 ---
 
-###### 126. 输出什么？
+## 126. 输出什么？
 
 ```javascript
 function getFine(speed, amount) {
@@ -4063,7 +4063,7 @@ console.log(getFine(130, 300))
 
 ---
 
-###### 127. 输出什么？
+## 127. 输出什么？
 
 ```javascript
 const spookyItems = ["👻", "🎃", "🕸"];
@@ -4089,7 +4089,7 @@ console.log(spookyItems);
 
 ---
 
-###### 128. 输出什么？
+## 128. 输出什么？
 
 ```javascript
 const name = "Lydia Hallie";
@@ -4121,7 +4121,7 @@ console.log(isNaN(age));
 
 ---
 
-###### 129. 输出什么？
+## 129. 输出什么？
 
 ```javascript
 const randomValue = 21;
@@ -4151,7 +4151,7 @@ getInfo();
 
 ---
 
-###### 130. 输出什么？
+## 130. 输出什么？
 
 ```javascript
 const myPromise = Promise.resolve("Woah some cool data");
@@ -4184,7 +4184,7 @@ const myPromise = Promise.resolve("Woah some cool data");
 
 ---
 
-###### 131. 输出什么？
+## 131. 输出什么？
 
 ```javascript
 const emojis = ["🥑", ["✨", "✨", ["🍕", "🍕"]]];
@@ -4209,7 +4209,7 @@ console.log(emojis.flat(1));
 
 ---
 
-###### <a name=20191224></a>132. 输出什么？
+## <a name=20191224></a>132. 输出什么？
 
 ```javascript
 class Counter {
@@ -4257,7 +4257,7 @@ console.log(counterOne.count);
 
 ---
 
-###### 133. 输出什么？
+## 133. 输出什么？
 
 ```javascript
 const myPromise = Promise.resolve(Promise.resolve("Promise!"));
@@ -4304,7 +4304,7 @@ promise 和 timeout 都是异步操作，函数继续执行当JS引擎忙于执�
 
 ---
 
-###### 134. 我们怎样才能在 `index.js` 中调用 `sum.js?` 中的 `sum`？
+## 134. 我们怎样才能在 `index.js` 中调用 `sum.js?` 中的 `sum`？
 
 ```javascript
 // sum.js
@@ -4362,7 +4362,7 @@ console.log(info);
 
 ---
 
-###### 135. 输出什么？
+## 135. 输出什么？
 
 ```javascript
 const handler = {
@@ -4399,7 +4399,7 @@ person.name;
 
 ---
 
-###### 136. 以下哪一项会对对象 `person` 有副作用？
+## 136. 以下哪一项会对对象 `person` 有副作用？
 
 ```javascript
 const person = { name: "Lydia Hallie" };
@@ -4426,7 +4426,7 @@ Object.seal(person);
 
 ---
 
-###### 137. 以下哪一项会对对象 `person` 有副作用？
+## 137. 以下哪一项会对对象 `person` 有副作用？
 
 ```javascript
 const person = {
@@ -4458,7 +4458,7 @@ Object.freeze(person);
 
 ---
 
-###### 138. 输出什么？
+## 138. 输出什么？
 
 ```javascript
 const add = x => x + x;
@@ -4490,7 +4490,7 @@ myFunc(3);
 
 ---
 
-###### 139. 输出什么？
+## 139. 输出什么？
 
 ```javascript
 class Counter {
@@ -4528,7 +4528,7 @@ console.log(counter.#number)
 
 ---
 
-###### 140. 选择哪一个？
+## 140. 选择哪一个？
 
 ```javascript
 const teams = [
@@ -4572,7 +4572,7 @@ obj.next(); // { value: "Lisa", done: false }
 
 ---
 
-###### 141. 输出什么？
+## 141. 输出什么？
 
 ```javascript
 const person = {
@@ -4617,7 +4617,7 @@ pushing `dancing` 和 `baking` 之后，`person.hobbies` 的值为 `["coding", "
 
 ---
 
-###### 142. 输出什么？
+## 142. 输出什么？
 
 ```javascript
 class Bird {
@@ -4653,7 +4653,7 @@ const pet = new Flamingo();
 
 ---
 
-###### 143. 哪一个选项会导致报错？
+## 143. 哪一个选项会导致报错？
 
 ```javascript
 const emojis = ["🎄", "🎅🏼", "🎁", "⭐"];
@@ -4681,7 +4681,7 @@ const emojis = ["🎄", "🎅🏼", "🎁", "⭐"];
 
 ---
 
-###### 144. 我们需要向对象 `person` 添加什么，以致执行 `[...person]` 时获得形如 `["Lydia Hallie", 21]` 的输出？
+## 144. 我们需要向对象 `person` 添加什么，以致执行 `[...person]` 时获得形如 `["Lydia Hallie", 21]` 的输出？
 
 ```javascript
 const person = {
