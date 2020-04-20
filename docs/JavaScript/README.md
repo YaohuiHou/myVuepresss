@@ -3,8 +3,11 @@
 ## JavaScript学习笔记
 
 [Mozilla - JavaScript](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript)
+
 [朱安邦的JavaScript学习笔记](https://www.axihe.com/anbang/js/edu/home.html) 
+
 朱安邦B站前端教程: [https://space.bilibili.com/59312814](https://space.bilibili.com/59312814)
+
 
 以下内容来自朱安邦GitHub资源，[点击查看原文](https://github.com/anbang/javascript-notes)
 

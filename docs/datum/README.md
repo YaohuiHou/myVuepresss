@@ -1,5 +1,7 @@
 # Daily-Interview-Question
 
+[点击查看项目源码](https://github.com/Advanced-Frontend/Daily-Interview-Question)：![](https://img.shields.io/github/stars/Advanced-Frontend/Daily-Interview-Question?style=social)
+
 加入前端「壹题」学习小组，尽在公众号「高级前端进阶」，进阶共勉之！
 
 工作日每天一道大厂前端面试题，一年后再回头，会感谢曾经努力的自己！

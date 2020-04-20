@@ -14,6 +14,9 @@
               <li class="contact-list-item">
                 <a href="https://github.com/YaohuiHou">GitHub</a>
               </li>
+              <li class="contact-list-item">
+                <a href="https://yaohuihou.github.io/project/">项目汇总</a>
+              </li>
             </ul>
           </div>
         </article>

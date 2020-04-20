@@ -26,6 +26,10 @@ sidebar: auto
   <animation/>
 </ClientOnly>
 
+## 更多CSS动画汇总
+
+[点击查看]](https://yaohuihou.github.io/topictool/#/animation)
+
 ### animation 参数详情
 
 | 值                        | 描述                                                                                                                                                                                                                                                                                                                 |

@@ -1,7 +1,7 @@
 
 ## 项目介绍
 
-项目地址：<https://github.com/qianguyihao/Web>
+[点击查看源码地址](https://github.com/qianguyihao/Web)：![](https://img.shields.io/github/stars/qianguyihao/Web?style=social)
 
 前端入门和进阶学习笔记。从零开始学前端，做一名精致的前端工程师。持续更新中。本项目的主要作用有：
 

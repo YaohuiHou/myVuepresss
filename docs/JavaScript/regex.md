@@ -2,7 +2,8 @@
 
 注：本文已经整理成电子书：[《JavaScript 正则迷你书》](https://juejin.im/post/59cc61176fb9a00a437b290b)
 
-[JavaScript正则表达式迷你书（1.1版）.pdf](./regexjspdf.pdf)
+[JavaScript正则表达式迷你书（1.1版）.pdf](https://github.com/YaohuiHou/myVuepresss/tree/master/docs/JavaScript/regexjspdf.pdf)
+
 
 
 > 本文转自 掘金【老姚】 著作权归作者所有。侵删！

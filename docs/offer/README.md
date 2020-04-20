@@ -10,7 +10,7 @@
 
 笔记不是从网上到处复制粘贴拼凑而来，虽然有少部分内容会直接引入书上原文或者官方技术文档的原文，但是没有直接摘抄其他人的博客文章，只做了参考，参考的文章会在最后给出链接。
 
-项目地址：<https://github.com/qianguyihao/Web>
+[点击查看项目源码](https://github.com/CavsZhouyou/Front-End-Interview-Notebook)：![](https://img.shields.io/github/stars/CavsZhouyou/Front-End-Interview-Notebook?style=social)
 
 ### 内推信息
 

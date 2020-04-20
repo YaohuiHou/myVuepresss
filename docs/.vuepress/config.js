@@ -55,12 +55,16 @@ module.exports = {
         text: '技术文档',
         items: [
           {
-            text: 'Html+CSS',
+            text: '前端资源',
             link: '/Html+CSS/',
           },
           {
             text: 'JavaScript',
             link: '/JavaScript/',
+          },
+          {
+            text:'TypeScript',
+            link:'https://www.tslang.cn/index.html'
           },
           {
             text:'ES6',
@@ -77,6 +81,10 @@ module.exports = {
           {
             text: 'Python',
             link: 'https://www.readwithu.com/',
+          },
+          {
+            text:'Flutter',
+            link: 'https://flutterchina.club/'
           }
         ],
       },
@@ -95,6 +103,18 @@ module.exports = {
             text:'前端「壹题」',
             link:'/datum/'
           },
+          {
+            text:'前端面试每日 3+1',
+            link: 'https://github.com/haizlin/fe-interview'
+          },
+          {
+            text:'算法小抄',
+            link:'https://labuladong.gitbook.io/algo/'
+          },
+          {
+            text:'免费视频课',
+            link:'https://jspang.com/'
+          }
         ],
       },
       {
@@ -108,7 +128,6 @@ module.exports = {
     ],
     sidebar: {
       '/JavaScript/': ['string', 'array', 'object', '遍历', 'regex'],
-      '/Html+CSS/': ['canvas'],
       '/notes/': [
         '组件',
         '微信分享',
